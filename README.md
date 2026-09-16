@@ -25,7 +25,8 @@ brew uninstall --cask optune
 brew untap sanjays2402/optune
 ```
 
-To also wipe Optune's per-device preferences and cached state:
+Uninstall also quits the running app and unloads its background agent; to
+wipe Optune's per-device preferences and cached state too:
 
 ```sh
 brew uninstall --cask --zap optune

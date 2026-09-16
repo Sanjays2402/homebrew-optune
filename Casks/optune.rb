@@ -16,6 +16,9 @@ cask "optune" do
 
   app "Optune.app"
 
+  uninstall quit:      "io.github.sanjays2402.optune",
+            launchctl: "io.github.sanjays2402.optune"
+
   zap trash: [
     "~/Library/Application Support/Optune",
     "~/Library/Preferences/io.github.sanjays2402.optune.plist",

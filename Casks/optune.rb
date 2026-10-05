@@ -1,6 +1,6 @@
 cask "optune" do
-  version "0.5.1"
-  sha256 "b9c33f98480b587ade6078497ef8ab9604a365638e43c6324d3c853387ce6e8b"
+  version "0.7.0"
+  sha256 "8e1e97a45d883884d130b6ed10d968b45b2d92dba2cbc8a66bee5f3edc3ce31b"
 
   url "https://github.com/Sanjays2402/optune/releases/download/v#{version}/Optune-#{version}.dmg"
   name "Optune"
@@ -12,17 +12,17 @@ cask "optune" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: ">= :sequoia"
 
   app "Optune.app"
 
-  uninstall quit:      "io.github.sanjays2402.optune",
-            launchctl: "io.github.sanjays2402.optune"
+  uninstall quit:      "com.sanjays2402.optune",
+            launchctl: "com.sanjays2402.optune"
 
   zap trash: [
     "~/Library/Application Support/Optune",
-    "~/Library/Preferences/io.github.sanjays2402.optune.plist",
-    "~/Library/Caches/io.github.sanjays2402.optune",
-    "~/Library/LaunchAgents/io.github.sanjays2402.optune.plist",
+    "~/Library/Preferences/com.sanjays2402.optune.plist",
+    "~/Library/Caches/com.sanjays2402.optune",
+    "~/Library/LaunchAgents/com.sanjays2402.optune.plist",
   ]
 end

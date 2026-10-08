@@ -1,6 +1,6 @@
 cask "optune" do
-  version "0.8.0"
-  sha256 "1e4e227810af1e3853610ace654b3aec8f9c17d2f6fc383ba35ae02342236ec5"
+  version "0.9.0"
+  sha256 "44db2164135d88ed5038c09405e7447c610eb72cc3bd0bfcf2d2bb16b4522426"
 
   url "https://github.com/Sanjays2402/optune/releases/download/v#{version}/Optune-#{version}.dmg"
   name "Optune"
